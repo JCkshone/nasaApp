@@ -16,4 +16,8 @@ struct ApplicationConstants {
     static let customErrorMessages = "Failded data load"
     static let dateFormat = "yyyy-MM-dd"
     static let requestDay = -7
+    static let vimeoAsset = "vimeo"
+    static let youtubeAsset = "youtube"
+    static let vieoAsset = "video"
+    static let imageAsset = "image"
 }

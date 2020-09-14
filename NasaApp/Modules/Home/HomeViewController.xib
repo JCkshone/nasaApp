@@ -9,6 +9,8 @@
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="HomeViewController" customModule="NasaApp" customModuleProvider="target">
             <connections>
+                <outlet property="kolodaView" destination="Mik-ER-e8V" id="89f-Sz-dlc"/>
+                <outlet property="reloadBtn" destination="6O3-NK-G8N" id="djs-po-qx3"/>
                 <outlet property="tabbarView" destination="bUE-fz-LK5" id="ACd-hn-SY4"/>
                 <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
             </connections>
@@ -31,15 +33,33 @@
                     <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                     <nil key="highlightedColor"/>
                 </label>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Mik-ER-e8V" customClass="KolodaView" customModule="Koloda">
+                    <rect key="frame" x="32" y="172.5" width="350" height="579.5"/>
+                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                </view>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="6O3-NK-G8N">
+                    <rect key="frame" x="32" y="742" width="350" height="42"/>
+                    <fontDescription key="fontDescription" name="Futura-Bold" family="Futura" pointSize="23"/>
+                    <state key="normal" title="Reload data">
+                        <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    </state>
+                </button>
             </subviews>
             <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
             <constraints>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="Mik-ER-e8V" secondAttribute="trailing" constant="32" id="9T3-Se-Odg"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="6O3-NK-G8N" secondAttribute="trailing" constant="32" id="C6d-0l-MDc"/>
+                <constraint firstItem="Mik-ER-e8V" firstAttribute="top" secondItem="J9e-AF-FYg" secondAttribute="bottom" constant="64" id="Ip3-Yp-egK"/>
                 <constraint firstItem="bUE-fz-LK5" firstAttribute="bottom" secondItem="i5M-Pr-FkT" secondAttribute="bottom" id="SEP-Wc-dWk"/>
                 <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="J9e-AF-FYg" secondAttribute="trailing" constant="32" id="SpN-oZ-BGI"/>
                 <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="bUE-fz-LK5" secondAttribute="trailing" id="XLa-uL-Y6D"/>
+                <constraint firstItem="bUE-fz-LK5" firstAttribute="top" secondItem="6O3-NK-G8N" secondAttribute="bottom" constant="32" id="Y4z-cS-AKQ"/>
                 <constraint firstItem="J9e-AF-FYg" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="32" id="dbl-zd-tvC"/>
+                <constraint firstItem="Mik-ER-e8V" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="32" id="fCq-ie-YZF"/>
+                <constraint firstItem="bUE-fz-LK5" firstAttribute="top" secondItem="Mik-ER-e8V" secondAttribute="bottom" constant="64" id="gOv-dj-igU"/>
                 <constraint firstItem="bUE-fz-LK5" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" id="hE1-Yz-PKF"/>
                 <constraint firstItem="J9e-AF-FYg" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" constant="32" id="jhq-48-RB3"/>
+                <constraint firstItem="6O3-NK-G8N" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="32" id="zQq-pC-yPa"/>
             </constraints>
             <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
             <point key="canvasLocation" x="137.68115942028987" y="95.758928571428569"/>

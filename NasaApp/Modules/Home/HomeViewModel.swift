@@ -13,16 +13,17 @@ import RxSwift
 protocol IHomeViewModel {
     var apodItems: BehaviorRelay<[ApodItem]> { get set }
     var apodViewModel: IApodViewModel { get set }
+    var doGetApods: PublishRelay<Void> { get set }
 }
 
 class HomeViewModel: IHomeViewModel {
+    var doGetApods = PublishRelay<Void>()
     var apodItems: BehaviorRelay<[ApodItem]>
     var apodViewModel: IApodViewModel
     var disposeBag = DisposeBag()
     
     init(apodViewModel: IApodViewModel = ApodViewModel()) {
         self.apodViewModel = apodViewModel
-        
         apodItems = BehaviorRelay<[ApodItem]>(value: [])
         setupEvenst()
     }
@@ -32,6 +33,11 @@ class HomeViewModel: IHomeViewModel {
             .asObservable()
             .bind(to: apodItems)
             .disposed(by: disposeBag)
+        
+        doGetApods.asObservable()
+            .bind(to: apodViewModel.doApodItems)
+            .disposed(by: disposeBag)
+        
     }
         
 }

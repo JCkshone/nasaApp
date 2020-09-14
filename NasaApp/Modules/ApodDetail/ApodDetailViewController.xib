@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="16097.3" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_0" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16087"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="ApodDetailViewController" customModule="NasaApp" customModuleProvider="target">
+            <connections>
+                <outlet property="iconPlanet" destination="Thp-Ez-qGh" id="G8e-TX-1M0"/>
+                <outlet property="itemDate" destination="EK4-cy-Fov" id="ZQg-2L-4d2"/>
+                <outlet property="itemDescription" destination="TuH-24-dlq" id="aEi-v0-7B3"/>
+                <outlet property="itemName" destination="sdH-i1-gvG" id="v4H-gw-MH0"/>
+                <outlet property="showMore" destination="wEC-P4-KU8" id="epN-Lc-9cb"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="SFI-Xv-euk">
+                    <rect key="frame" x="16" y="32" width="48" height="48"/>
+                    <color key="tintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <state key="normal" backgroundImage="ic_back_button">
+                        <color key="titleColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    </state>
+                    <connections>
+                        <action selector="backButton:" destination="-1" eventType="touchUpInside" id="mJ6-Da-WaK"/>
+                    </connections>
+                </button>
+                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="planet3" translatesAutoresizingMaskIntoConstraints="NO" id="Thp-Ez-qGh">
+                    <rect key="frame" x="120" y="0.0" width="200" height="200"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="200" id="8QJ-JA-owS"/>
+                        <constraint firstAttribute="height" constant="200" id="yyn-Wm-NGf"/>
+                    </constraints>
+                </imageView>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="sdH-i1-gvG">
+                    <rect key="frame" x="32" y="232" width="256" height="34"/>
+                    <fontDescription key="fontDescription" name="Futura-Bold" family="Futura" pointSize="26"/>
+                    <nil key="textColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="TuH-24-dlq">
+                    <rect key="frame" x="32" y="325.5" width="256" height="157.5"/>
+                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <string key="text">Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nam liber te conscient to factor tum poen legum odioque civiuda.</string>
+                    <color key="textColor" red="0.12984204290000001" green="0.12984612579999999" blue="0.12984395030000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <fontDescription key="fontDescription" name="Futura-Medium" family="Futura" pointSize="15"/>
+                    <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                </textView>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="wEC-P4-KU8">
+                    <rect key="frame" x="32" y="515" width="256" height="33"/>
+                    <fontDescription key="fontDescription" name="Futura-Bold" family="Futura" pointSize="16"/>
+                    <state key="normal" title="Show Asset"/>
+                </button>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="EK4-cy-Fov">
+                    <rect key="frame" x="32" y="274" width="256" height="19.5"/>
+                    <fontDescription key="fontDescription" name="Futura-Medium" family="Futura" pointSize="15"/>
+                    <color key="textColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <nil key="highlightedColor"/>
+                </label>
+            </subviews>
+            <color key="backgroundColor" red="0.92143100499999997" green="0.92145264149999995" blue="0.92144101860000005" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="Thp-Ez-qGh" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" id="1Ey-pV-UwG"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="EK4-cy-Fov" secondAttribute="trailing" constant="32" id="2wC-ai-GKd"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="sdH-i1-gvG" secondAttribute="trailing" constant="32" id="47S-hU-Ctl"/>
+                <constraint firstItem="TuH-24-dlq" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="32" id="7tW-z8-bpq"/>
+                <constraint firstItem="EK4-cy-Fov" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="32" id="9gj-x3-Eqo"/>
+                <constraint firstItem="sdH-i1-gvG" firstAttribute="top" secondItem="Thp-Ez-qGh" secondAttribute="bottom" constant="32" id="Dsx-Cz-OMY"/>
+                <constraint firstItem="Thp-Ez-qGh" firstAttribute="width" secondItem="i5M-Pr-FkT" secondAttribute="height" multiplier="25:71" id="Hav-H7-83I"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="bottom" secondItem="wEC-P4-KU8" secondAttribute="bottom" constant="20" id="I2o-CT-UOO"/>
+                <constraint firstItem="TuH-24-dlq" firstAttribute="top" secondItem="EK4-cy-Fov" secondAttribute="bottom" constant="32" id="I5N-wH-aMK"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="wEC-P4-KU8" secondAttribute="trailing" constant="32" id="PlV-Nl-Ydf"/>
+                <constraint firstItem="EK4-cy-Fov" firstAttribute="top" secondItem="sdH-i1-gvG" secondAttribute="bottom" constant="8" id="SXf-KM-9nR"/>
+                <constraint firstAttribute="trailing" secondItem="TuH-24-dlq" secondAttribute="trailing" constant="32" id="UX9-xk-rzg"/>
+                <constraint firstItem="wEC-P4-KU8" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="32" id="ZMT-k8-rR4"/>
+                <constraint firstItem="wEC-P4-KU8" firstAttribute="top" secondItem="TuH-24-dlq" secondAttribute="bottom" constant="32" id="e2J-Oj-Ocw"/>
+                <constraint firstItem="SFI-Xv-euk" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="16" id="gPw-ys-47j"/>
+                <constraint firstItem="SFI-Xv-euk" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" constant="32" id="s5A-cP-ESd"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="Thp-Ez-qGh" secondAttribute="trailing" id="viF-8d-H6v"/>
+                <constraint firstItem="sdH-i1-gvG" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="32" id="zBs-vG-bax"/>
+            </constraints>
+            <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
+            <point key="canvasLocation" x="136.875" y="95.070422535211264"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="ic_back_button" width="48" height="48"/>
+        <image name="planet3" width="92" height="92"/>
+    </resources>
+</document>

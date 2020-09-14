@@ -9,9 +9,12 @@
 import UIKit
 import RxCocoa
 import RxSwift
+import Koloda
 
 class HomeViewController: UIViewController {
     @IBOutlet weak var tabbarView: Tabbar!
+    @IBOutlet weak var kolodaView: KolodaView!
+    @IBOutlet weak var reloadBtn: UIButton!
     
     weak var coordinator: MainCoordinator?
     var viewModel: IHomeViewModel?
@@ -30,13 +33,41 @@ class HomeViewController: UIViewController {
     }
     
     func setupView() {
-        self.setupBg()
         tabbarView.roundCorners(corners: [.layerMaxXMaxYCorner, .layerMaxXMinYCorner, .layerMinXMaxYCorner, .layerMinXMinYCorner], radius: 35)
+        kolodaView.dataSource = self
+        kolodaView.delegate = self
+        setupBg()
     }
     
     func setupRxEvents() {
         viewModel?.apodItems.asObservable().bind(onNext: { items in
-            print("items", items)
+            self.kolodaView.reloadData()
         }).disposed(by: disposeBag)
+        
+        reloadBtn.rx.tap.bind { _ in
+            let oldApods = self.viewModel?.apodItems.value ?? []
+            self.viewModel?.apodItems.accept([])
+            self.viewModel?.apodItems.accept(oldApods)
+        }.disposed(by: disposeBag)
     }
+}
+
+extension HomeViewController: KolodaViewDataSource {
+    func koloda(_ koloda: KolodaView, viewForCardAt index: Int) -> UIView {
+        let swipe = SwipeCard()
+        swipe.rootSwipeCard.roundCorners(corners: [.layerMaxXMaxYCorner, .layerMaxXMinYCorner, .layerMinXMaxYCorner, .layerMinXMinYCorner], radius: 35)
+        if let data = viewModel?.apodItems.value[index] {
+            swipe.data = data
+            swipe.coordinator = self.coordinator
+        }
+        return swipe
+    }
+    
+    func kolodaNumberOfCards(_ koloda: KolodaView) -> Int {
+        viewModel?.apodItems.value.count ?? 0
+    }
+}
+
+extension HomeViewController: KolodaViewDelegate {
+    
 }

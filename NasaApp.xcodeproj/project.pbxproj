@@ -36,6 +36,14 @@
 		498D1866250FAAFD0040A6BA /* Tabbar.xib in Resources */ = {isa = PBXBuildFile; fileRef = 498D1865250FAAFD0040A6BA /* Tabbar.xib */; };
 		498D1868250FAE580040A6BA /* NasaAppColor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 498D1867250FAE580040A6BA /* NasaAppColor.swift */; };
 		498D186A250FB51B0040A6BA /* UIViewExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 498D1869250FB51B0040A6BA /* UIViewExtension.swift */; };
+		498D186E250FE16A0040A6BA /* SwipeCard.swift in Sources */ = {isa = PBXBuildFile; fileRef = 498D186D250FE16A0040A6BA /* SwipeCard.swift */; };
+		498D1870250FE1750040A6BA /* SwipeCard.xib in Resources */ = {isa = PBXBuildFile; fileRef = 498D186F250FE1750040A6BA /* SwipeCard.xib */; };
+		498D1874250FFB620040A6BA /* ApodDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 498D1872250FFB620040A6BA /* ApodDetailViewController.swift */; };
+		498D1875250FFB620040A6BA /* ApodDetailViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 498D1873250FFB620040A6BA /* ApodDetailViewController.xib */; };
+		49DDE54A2510032B006130F8 /* ShowAssetViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49DDE5482510032B006130F8 /* ShowAssetViewController.swift */; };
+		49DDE54B2510032B006130F8 /* ShowAssetViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 49DDE5492510032B006130F8 /* ShowAssetViewController.xib */; };
+		49DDE54D2510067F006130F8 /* UIImageViewExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49DDE54C2510067F006130F8 /* UIImageViewExtension.swift */; };
+		49DDE54F25101159006130F8 /* Utilities.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49DDE54E25101159006130F8 /* Utilities.swift */; };
 		A8F6BC0A085C243615CCD353 /* Pods_NasaApp.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F732A54E3FF706A3F573E948 /* Pods_NasaApp.framework */; };
 		B439B59AAB3FA70056062BF7 /* Pods_NasaAppTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2F780B7E76801A8FE1A37588 /* Pods_NasaAppTests.framework */; };
 /* End PBXBuildFile section */
@@ -96,6 +104,14 @@
 		498D1865250FAAFD0040A6BA /* Tabbar.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = Tabbar.xib; sourceTree = "<group>"; };
 		498D1867250FAE580040A6BA /* NasaAppColor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NasaAppColor.swift; sourceTree = "<group>"; };
 		498D1869250FB51B0040A6BA /* UIViewExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIViewExtension.swift; sourceTree = "<group>"; };
+		498D186D250FE16A0040A6BA /* SwipeCard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwipeCard.swift; sourceTree = "<group>"; };
+		498D186F250FE1750040A6BA /* SwipeCard.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SwipeCard.xib; sourceTree = "<group>"; };
+		498D1872250FFB620040A6BA /* ApodDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApodDetailViewController.swift; sourceTree = "<group>"; };
+		498D1873250FFB620040A6BA /* ApodDetailViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ApodDetailViewController.xib; sourceTree = "<group>"; };
+		49DDE5482510032B006130F8 /* ShowAssetViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShowAssetViewController.swift; sourceTree = "<group>"; };
+		49DDE5492510032B006130F8 /* ShowAssetViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ShowAssetViewController.xib; sourceTree = "<group>"; };
+		49DDE54C2510067F006130F8 /* UIImageViewExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIImageViewExtension.swift; sourceTree = "<group>"; };
+		49DDE54E25101159006130F8 /* Utilities.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Utilities.swift; sourceTree = "<group>"; };
 		6FA68BB391EF41B3A923FD5D /* Pods_NasaApp_NasaAppUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_NasaApp_NasaAppUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		A1A0F2E96DDCAF72DEA8B796 /* Pods-NasaAppTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-NasaAppTests.debug.xcconfig"; path = "Target Support Files/Pods-NasaAppTests/Pods-NasaAppTests.debug.xcconfig"; sourceTree = "<group>"; };
 		CAD5B914FC8A2ABAF4FAD74F /* Pods-NasaApp.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-NasaApp.debug.xcconfig"; path = "Target Support Files/Pods-NasaApp/Pods-NasaApp.debug.xcconfig"; sourceTree = "<group>"; };
@@ -205,7 +221,8 @@
 		498D182B250DCAFA0040A6BA /* Modules */ = {
 			isa = PBXGroup;
 			children = (
-				498D186B250FB9A90040A6BA /* Swipable */,
+				49DDE54725100310006130F8 /* ShowAsset */,
+				498D1871250FFB2C0040A6BA /* ApodDetail */,
 				498D1850250EEF4E0040A6BA /* Base */,
 				498D184F250EEE5C0040A6BA /* Apod */,
 				498D1834250DCF890040A6BA /* Tabbar */,
@@ -227,6 +244,7 @@
 		498D182D250DCEEA0040A6BA /* Home */ = {
 			isa = PBXGroup;
 			children = (
+				498D186C250FE09A0040A6BA /* CustomSwipeView */,
 				498D1830250DCF760040A6BA /* HomeViewController.swift */,
 				498D1831250DCF760040A6BA /* HomeViewController.xib */,
 				498D185D250FA10D0040A6BA /* HomeViewModel.swift */,
@@ -250,6 +268,7 @@
 				498D1849250DEBFE0040A6BA /* NetworkServices.swift */,
 				498D184B250EA7090040A6BA /* NasaAppConstants.swift */,
 				498D1867250FAE580040A6BA /* NasaAppColor.swift */,
+				49DDE54E25101159006130F8 /* Utilities.swift */,
 			);
 			path = Helper;
 			sourceTree = "<group>";
@@ -271,6 +290,7 @@
 				498D185B250F23420040A6BA /* DateExtension.swift */,
 				498D185F250FA77F0040A6BA /* ViewControllerExtension.swift */,
 				498D1869250FB51B0040A6BA /* UIViewExtension.swift */,
+				49DDE54C2510067F006130F8 /* UIImageViewExtension.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -294,11 +314,31 @@
 			path = Base;
 			sourceTree = "<group>";
 		};
-		498D186B250FB9A90040A6BA /* Swipable */ = {
+		498D186C250FE09A0040A6BA /* CustomSwipeView */ = {
 			isa = PBXGroup;
 			children = (
+				498D186D250FE16A0040A6BA /* SwipeCard.swift */,
+				498D186F250FE1750040A6BA /* SwipeCard.xib */,
 			);
-			path = Swipable;
+			path = CustomSwipeView;
+			sourceTree = "<group>";
+		};
+		498D1871250FFB2C0040A6BA /* ApodDetail */ = {
+			isa = PBXGroup;
+			children = (
+				498D1872250FFB620040A6BA /* ApodDetailViewController.swift */,
+				498D1873250FFB620040A6BA /* ApodDetailViewController.xib */,
+			);
+			path = ApodDetail;
+			sourceTree = "<group>";
+		};
+		49DDE54725100310006130F8 /* ShowAsset */ = {
+			isa = PBXGroup;
+			children = (
+				49DDE5482510032B006130F8 /* ShowAssetViewController.swift */,
+				49DDE5492510032B006130F8 /* ShowAssetViewController.xib */,
+			);
+			path = ShowAsset;
 			sourceTree = "<group>";
 		};
 		BAB3E619248AF77A7D1B5173 /* Frameworks */ = {
@@ -434,7 +474,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				498D1804250DB2250040A6BA /* LaunchScreen.storyboard in Resources */,
+				49DDE54B2510032B006130F8 /* ShowAssetViewController.xib in Resources */,
+				498D1870250FE1750040A6BA /* SwipeCard.xib in Resources */,
 				498D1801250DB2250040A6BA /* Assets.xcassets in Resources */,
+				498D1875250FFB620040A6BA /* ApodDetailViewController.xib in Resources */,
 				498D1833250DCF760040A6BA /* HomeViewController.xib in Resources */,
 				498D1836250DD0C30040A6BA /* Configurations.plist in Resources */,
 				498D1828250DC99F0040A6BA /* Planets.xcassets in Resources */,
@@ -570,13 +613,17 @@
 				498D17F8250DB2200040A6BA /* AppDelegate.swift in Sources */,
 				498D1858250F19140040A6BA /* ApodViewModel.swift in Sources */,
 				498D1864250FAA360040A6BA /* Tabbar.swift in Sources */,
+				498D186E250FE16A0040A6BA /* SwipeCard.swift in Sources */,
+				49DDE54A2510032B006130F8 /* ShowAssetViewController.swift in Sources */,
 				498D1868250FAE580040A6BA /* NasaAppColor.swift in Sources */,
 				498D185E250FA10D0040A6BA /* HomeViewModel.swift in Sources */,
 				498D184C250EA7090040A6BA /* NasaAppConstants.swift in Sources */,
 				498D1841250DDFC30040A6BA /* Coordinator.swift in Sources */,
+				498D1874250FFB620040A6BA /* ApodDetailViewController.swift in Sources */,
 				498D184A250DEBFE0040A6BA /* NetworkServices.swift in Sources */,
 				498D1852250EEF5B0040A6BA /* BaseManager.swift in Sources */,
 				498D186A250FB51B0040A6BA /* UIViewExtension.swift in Sources */,
+				49DDE54D2510067F006130F8 /* UIImageViewExtension.swift in Sources */,
 				498D1854250EF06C0040A6BA /* BaseViewModel.swift in Sources */,
 				498D1839250DD2420040A6BA /* Configuration.swift in Sources */,
 				498D185C250F23420040A6BA /* DateExtension.swift in Sources */,
@@ -585,6 +632,7 @@
 				498D1843250DE03E0040A6BA /* Storyboarded.swift in Sources */,
 				498D1860250FA77F0040A6BA /* ViewControllerExtension.swift in Sources */,
 				498D1848250DE9130040A6BA /* JSON.swift in Sources */,
+				49DDE54F25101159006130F8 /* Utilities.swift in Sources */,
 				498D185A250F1C460040A6BA /* ApodModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -752,6 +800,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 8D755DRTSY;
 				INFOPLIST_FILE = NasaApp/SettingFiles/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -770,6 +819,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 8D755DRTSY;
 				INFOPLIST_FILE = NasaApp/SettingFiles/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",

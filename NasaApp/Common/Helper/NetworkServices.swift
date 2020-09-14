@@ -24,15 +24,15 @@ class NetworkServices {
         return URL(string: Configuration.shared.getValueConfiguration(withType: String.self, key: .baseUrl) ?? "")
     }
     
-    var queryUrl: [URLQueryItem] = {
-        var items = [URLQueryItem]()
-        items.append(URLQueryItem(name: ApplicationConstants.apiKeyPath, value: Configuration.shared.getValueConfiguration(withType: String.self, key: .publicKey)))
-        return items
-    }()
-    
     func get<T: Codable>(type: T.Type,
                          date: String,
                          completion: @escaping (Result<T, APIServiceError>) -> ()) {
+        
+        var queryUrl: [URLQueryItem] = {
+            var items = [URLQueryItem]()
+            items.append(URLQueryItem(name: ApplicationConstants.apiKeyPath, value: Configuration.shared.getValueConfiguration(withType: String.self, key: .publicKey)))
+            return items
+        }()
         
         guard let url = baseUrl, var urlComponents = URLComponents(url: url, resolvingAgainstBaseURL: true) else {
             completion(.failure(.invalidEndpoint))
@@ -47,6 +47,8 @@ class NetworkServices {
             completion(.failure(.invalidEndpoint))
             return
         }
+        
+        print("complete url", completeUrl)
         
         urlSession.dataTask(with: completeUrl) { (data, response, error)  in
             guard let data = data, let statusCode = (response as? HTTPURLResponse)?.statusCode, 200..<299 ~= statusCode else {

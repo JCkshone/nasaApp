@@ -72,6 +72,7 @@ class ApodManager: IApodManager {
     private func getPositionDate() -> String {
         let date = datesForRequest[datePosition]
         datePosition += 1
+        print(date)
         return date
     }
 }
