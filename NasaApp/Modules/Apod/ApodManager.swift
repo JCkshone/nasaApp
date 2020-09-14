@@ -44,7 +44,6 @@ class ApodManager: IApodManager {
             switch result {
               case .success(let item):
                   self.setApodItem.onNext(item)
-                  print("item \(self.datePosition)", item)
               case .failure(let error):
                   print(error.localizedDescription)
               }

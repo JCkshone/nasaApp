@@ -17,10 +17,11 @@ class MainCoordinator: Coordinator {
     }
     
     func splash() {
-        let vc = SplashViewController()
-        let apodViewModel = ApodViewModel()
+        let vc = HomeViewController()
+        let viewModel = HomeViewModel()
+        
         vc.coordinator = self
-        vc.apodViewModel = apodViewModel
+        vc.viewModel = viewModel
         navigationController.pushViewController(vc, animated: false)
     }
 }

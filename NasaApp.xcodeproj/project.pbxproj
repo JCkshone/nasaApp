@@ -18,8 +18,6 @@
 		498D1833250DCF760040A6BA /* HomeViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 498D1831250DCF760040A6BA /* HomeViewController.xib */; };
 		498D1836250DD0C30040A6BA /* Configurations.plist in Resources */ = {isa = PBXBuildFile; fileRef = 498D1835250DD0C30040A6BA /* Configurations.plist */; };
 		498D1839250DD2420040A6BA /* Configuration.swift in Sources */ = {isa = PBXBuildFile; fileRef = 498D1838250DD2420040A6BA /* Configuration.swift */; };
-		498D183D250DD9330040A6BA /* SplashViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 498D183B250DD9330040A6BA /* SplashViewController.swift */; };
-		498D183E250DD9330040A6BA /* SplashViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 498D183C250DD9330040A6BA /* SplashViewController.xib */; };
 		498D1841250DDFC30040A6BA /* Coordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 498D1840250DDFC30040A6BA /* Coordinator.swift */; };
 		498D1843250DE03E0040A6BA /* Storyboarded.swift in Sources */ = {isa = PBXBuildFile; fileRef = 498D1842250DE03E0040A6BA /* Storyboarded.swift */; };
 		498D1845250DE10C0040A6BA /* MainCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 498D1844250DE10C0040A6BA /* MainCoordinator.swift */; };
@@ -32,6 +30,12 @@
 		498D1858250F19140040A6BA /* ApodViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 498D1857250F19140040A6BA /* ApodViewModel.swift */; };
 		498D185A250F1C460040A6BA /* ApodModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 498D1859250F1C460040A6BA /* ApodModel.swift */; };
 		498D185C250F23420040A6BA /* DateExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 498D185B250F23420040A6BA /* DateExtension.swift */; };
+		498D185E250FA10D0040A6BA /* HomeViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 498D185D250FA10D0040A6BA /* HomeViewModel.swift */; };
+		498D1860250FA77F0040A6BA /* ViewControllerExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 498D185F250FA77F0040A6BA /* ViewControllerExtension.swift */; };
+		498D1864250FAA360040A6BA /* Tabbar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 498D1863250FAA360040A6BA /* Tabbar.swift */; };
+		498D1866250FAAFD0040A6BA /* Tabbar.xib in Resources */ = {isa = PBXBuildFile; fileRef = 498D1865250FAAFD0040A6BA /* Tabbar.xib */; };
+		498D1868250FAE580040A6BA /* NasaAppColor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 498D1867250FAE580040A6BA /* NasaAppColor.swift */; };
+		498D186A250FB51B0040A6BA /* UIViewExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 498D1869250FB51B0040A6BA /* UIViewExtension.swift */; };
 		A8F6BC0A085C243615CCD353 /* Pods_NasaApp.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F732A54E3FF706A3F573E948 /* Pods_NasaApp.framework */; };
 		B439B59AAB3FA70056062BF7 /* Pods_NasaAppTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2F780B7E76801A8FE1A37588 /* Pods_NasaAppTests.framework */; };
 /* End PBXBuildFile section */
@@ -74,8 +78,6 @@
 		498D1831250DCF760040A6BA /* HomeViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = HomeViewController.xib; sourceTree = "<group>"; };
 		498D1835250DD0C30040A6BA /* Configurations.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Configurations.plist; sourceTree = "<group>"; };
 		498D1838250DD2420040A6BA /* Configuration.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Configuration.swift; sourceTree = "<group>"; };
-		498D183B250DD9330040A6BA /* SplashViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SplashViewController.swift; sourceTree = "<group>"; };
-		498D183C250DD9330040A6BA /* SplashViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SplashViewController.xib; sourceTree = "<group>"; };
 		498D1840250DDFC30040A6BA /* Coordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Coordinator.swift; sourceTree = "<group>"; };
 		498D1842250DE03E0040A6BA /* Storyboarded.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Storyboarded.swift; sourceTree = "<group>"; };
 		498D1844250DE10C0040A6BA /* MainCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainCoordinator.swift; sourceTree = "<group>"; };
@@ -88,6 +90,12 @@
 		498D1857250F19140040A6BA /* ApodViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApodViewModel.swift; sourceTree = "<group>"; };
 		498D1859250F1C460040A6BA /* ApodModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApodModel.swift; sourceTree = "<group>"; };
 		498D185B250F23420040A6BA /* DateExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DateExtension.swift; sourceTree = "<group>"; };
+		498D185D250FA10D0040A6BA /* HomeViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewModel.swift; sourceTree = "<group>"; };
+		498D185F250FA77F0040A6BA /* ViewControllerExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewControllerExtension.swift; sourceTree = "<group>"; };
+		498D1863250FAA360040A6BA /* Tabbar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tabbar.swift; sourceTree = "<group>"; };
+		498D1865250FAAFD0040A6BA /* Tabbar.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = Tabbar.xib; sourceTree = "<group>"; };
+		498D1867250FAE580040A6BA /* NasaAppColor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NasaAppColor.swift; sourceTree = "<group>"; };
+		498D1869250FB51B0040A6BA /* UIViewExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIViewExtension.swift; sourceTree = "<group>"; };
 		6FA68BB391EF41B3A923FD5D /* Pods_NasaApp_NasaAppUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_NasaApp_NasaAppUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		A1A0F2E96DDCAF72DEA8B796 /* Pods-NasaAppTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-NasaAppTests.debug.xcconfig"; path = "Target Support Files/Pods-NasaAppTests/Pods-NasaAppTests.debug.xcconfig"; sourceTree = "<group>"; };
 		CAD5B914FC8A2ABAF4FAD74F /* Pods-NasaApp.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-NasaApp.debug.xcconfig"; path = "Target Support Files/Pods-NasaApp/Pods-NasaApp.debug.xcconfig"; sourceTree = "<group>"; };
@@ -197,9 +205,9 @@
 		498D182B250DCAFA0040A6BA /* Modules */ = {
 			isa = PBXGroup;
 			children = (
+				498D186B250FB9A90040A6BA /* Swipable */,
 				498D1850250EEF4E0040A6BA /* Base */,
 				498D184F250EEE5C0040A6BA /* Apod */,
-				498D183A250DD9180040A6BA /* Splash */,
 				498D1834250DCF890040A6BA /* Tabbar */,
 				498D182D250DCEEA0040A6BA /* Home */,
 			);
@@ -221,6 +229,7 @@
 			children = (
 				498D1830250DCF760040A6BA /* HomeViewController.swift */,
 				498D1831250DCF760040A6BA /* HomeViewController.xib */,
+				498D185D250FA10D0040A6BA /* HomeViewModel.swift */,
 			);
 			path = Home;
 			sourceTree = "<group>";
@@ -228,6 +237,8 @@
 		498D1834250DCF890040A6BA /* Tabbar */ = {
 			isa = PBXGroup;
 			children = (
+				498D1863250FAA360040A6BA /* Tabbar.swift */,
+				498D1865250FAAFD0040A6BA /* Tabbar.xib */,
 			);
 			path = Tabbar;
 			sourceTree = "<group>";
@@ -238,17 +249,9 @@
 				498D1838250DD2420040A6BA /* Configuration.swift */,
 				498D1849250DEBFE0040A6BA /* NetworkServices.swift */,
 				498D184B250EA7090040A6BA /* NasaAppConstants.swift */,
+				498D1867250FAE580040A6BA /* NasaAppColor.swift */,
 			);
 			path = Helper;
-			sourceTree = "<group>";
-		};
-		498D183A250DD9180040A6BA /* Splash */ = {
-			isa = PBXGroup;
-			children = (
-				498D183B250DD9330040A6BA /* SplashViewController.swift */,
-				498D183C250DD9330040A6BA /* SplashViewController.xib */,
-			);
-			path = Splash;
 			sourceTree = "<group>";
 		};
 		498D183F250DDF650040A6BA /* Coordinator */ = {
@@ -266,6 +269,8 @@
 			children = (
 				498D1847250DE9130040A6BA /* JSON.swift */,
 				498D185B250F23420040A6BA /* DateExtension.swift */,
+				498D185F250FA77F0040A6BA /* ViewControllerExtension.swift */,
+				498D1869250FB51B0040A6BA /* UIViewExtension.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -287,6 +292,13 @@
 				498D1853250EF06C0040A6BA /* BaseViewModel.swift */,
 			);
 			path = Base;
+			sourceTree = "<group>";
+		};
+		498D186B250FB9A90040A6BA /* Swipable */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Swipable;
 			sourceTree = "<group>";
 		};
 		BAB3E619248AF77A7D1B5173 /* Frameworks */ = {
@@ -424,9 +436,9 @@
 				498D1804250DB2250040A6BA /* LaunchScreen.storyboard in Resources */,
 				498D1801250DB2250040A6BA /* Assets.xcassets in Resources */,
 				498D1833250DCF760040A6BA /* HomeViewController.xib in Resources */,
-				498D183E250DD9330040A6BA /* SplashViewController.xib in Resources */,
 				498D1836250DD0C30040A6BA /* Configurations.plist in Resources */,
 				498D1828250DC99F0040A6BA /* Planets.xcassets in Resources */,
+				498D1866250FAAFD0040A6BA /* Tabbar.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -557,17 +569,21 @@
 				498D1845250DE10C0040A6BA /* MainCoordinator.swift in Sources */,
 				498D17F8250DB2200040A6BA /* AppDelegate.swift in Sources */,
 				498D1858250F19140040A6BA /* ApodViewModel.swift in Sources */,
+				498D1864250FAA360040A6BA /* Tabbar.swift in Sources */,
+				498D1868250FAE580040A6BA /* NasaAppColor.swift in Sources */,
+				498D185E250FA10D0040A6BA /* HomeViewModel.swift in Sources */,
 				498D184C250EA7090040A6BA /* NasaAppConstants.swift in Sources */,
 				498D1841250DDFC30040A6BA /* Coordinator.swift in Sources */,
 				498D184A250DEBFE0040A6BA /* NetworkServices.swift in Sources */,
 				498D1852250EEF5B0040A6BA /* BaseManager.swift in Sources */,
+				498D186A250FB51B0040A6BA /* UIViewExtension.swift in Sources */,
 				498D1854250EF06C0040A6BA /* BaseViewModel.swift in Sources */,
 				498D1839250DD2420040A6BA /* Configuration.swift in Sources */,
 				498D185C250F23420040A6BA /* DateExtension.swift in Sources */,
 				498D1856250EF3C00040A6BA /* ApodManager.swift in Sources */,
 				498D1832250DCF760040A6BA /* HomeViewController.swift in Sources */,
-				498D183D250DD9330040A6BA /* SplashViewController.swift in Sources */,
 				498D1843250DE03E0040A6BA /* Storyboarded.swift in Sources */,
+				498D1860250FA77F0040A6BA /* ViewControllerExtension.swift in Sources */,
 				498D1848250DE9130040A6BA /* JSON.swift in Sources */,
 				498D185A250F1C460040A6BA /* ApodModel.swift in Sources */,
 			);
